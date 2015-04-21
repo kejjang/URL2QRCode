@@ -1,0 +1,11 @@
+.url2qrcode-item{
+  list-style-image: url("chrome://url2qrcode/skin/url2qrcode_btn_small.png"); 
+}
+
+#url2qrcode-button{
+  list-style-image: url("chrome://url2qrcode/skin/url2qrcode_btn_large.png"); 
+}
+
+toolbar[iconsize="small"] #url2qrcode-button{
+  list-style-image: url("chrome://url2qrcode/skin/url2qrcode_btn_small.png"); 
+}

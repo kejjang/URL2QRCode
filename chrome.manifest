@@ -1,0 +1,7 @@
+content url2qrcode content/
+overlay chrome://browser/content/browser.xul chrome://url2qrcode/content/url2qrcodeOverlay.xul
+
+locale url2qrcode en-US locale/en-US/
+
+skin url2qrcode classic/1.0 skin/
+style chrome://global/content/customizeToolbar.xul chrome://url2qrcode/skin/url2qrcodeOverlay.css

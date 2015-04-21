@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://url2qrcode/skin/url2qrcodeOverlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://url2qrcode/locale/url2qrcodeOverlay.dtd">
+<overlay id="url2qrcode-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="url2qrcodeOverlay.js"/>
+  
+  <toolbarpalette id="BrowserToolbarPalette">
+
+    <toolbarbutton id="url2qrcode-button"
+      label="&URL2QRCode;"
+      tooltiptext="&URL2QRCode;"
+      oncommand="url2qrcode.send();"
+      class="toolbarbutton-1 url2qrcode-item"
+      />
+
+  </toolbarpalette>
+
+  <popup id="contentAreaContextMenu">
+    <menuitem id="url2qrcode-item" label="&URL2QRCode;"
+      insertbefore="context-bookmarkpage"
+      class="menuitem-iconic url2qrcode-item" iconic="menuitem-iconic url2qrcode-item"
+      oncommand="url2qrcode.send();"/>
+    <menuseparator id="url2qrcode-sep" insertbefore="context-bookmarkpage"/>
+  </popup>
+</overlay>
